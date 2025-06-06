@@ -3,3 +3,28 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  section.hero
+    .container
+      h2 Discover the world of #{title}
+      p Explore our features and offerings to make your experience unforgettable.
+      a.btn.btn-primary(href='/features') Learn More
+
+  section.features
+    .container
+      h3 Our Features
+      ul
+        li
+          h4 Feature 1
+          p Description of feature 1.
+        li
+          h4 Feature 2
+          p Description of feature 2.
+        li
+          h4 Feature 3
+          p Description of feature 3.
+
+  section.cta
+    .container
+      h3 Ready to get started?
+      p Join us today and take the first step towards an amazing journey.
+      a.btn.btn-success(href='/signup') Sign Up Now
